@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Repo-web
+    env: docker
+    repo: https://github.com/KatnDogs/Repo
+    branch: main
+    plan: free
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars: []
