@@ -3,7 +3,7 @@ WORKDIR /app
 
 # Copy package manifests if present and install dependencies
 COPY package*.json ./
-RUN if [ -f package.json ]; then npm ci --silent; fi
+RUN if [ -f package.json ]; then npm install --silent; fi
 
 # Copy the rest of the app
 COPY . .
